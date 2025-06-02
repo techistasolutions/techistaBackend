@@ -20,6 +20,9 @@ app.use(cors({
   credentials: true
 }));
 
+app.get("/", (req, res) => {
+  res.send("Hello World");
+});
 
 app.use(logger("dev"));
 app.use(express.json());
